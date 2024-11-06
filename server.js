@@ -23,6 +23,11 @@ app.use(cookieParser());
 // Routes :
 app.use("/api/vender", authRoutes);
 
+
+app.get('/', (req,res) =>{
+  res.send('response')
+})
+
 // Common error Handler for all  (Best practise):
 app.use("/", (err, req, res, next) => {
   if (err) {
