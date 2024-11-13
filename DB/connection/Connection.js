@@ -9,6 +9,8 @@ let db_Name = 'Charles-UTurn'
 let db_Cluster = 'cluster0.5fc7k.mongodb.net'
 
 const cloudURL = `mongodb+srv://${db_UserName}:${db_password}@${db_Cluster}/${db_Name}?retryWrites=true&w=majority`;
+
+// const cloudURL1 = `mongodb+srv://${db_UserName}:${db_password}@${db_Cluster}/${db_Name}?retryWrites=true&w=majority`;
 const connectDB = async () => {
 
     await mongoose.connect(cloudURL);
